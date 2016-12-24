@@ -1,0 +1,92 @@
+<div>
+    <div class="navbar-fixed">
+          <ul id="account_quick_access" class="dropdown-content" style="margin-top:64px;">
+              <li><a href="#!"><i class="material-icons left">account_circle</i>Account</a></li>
+              <li><a href="#!"><i class="material-icons left">face</i>Change picture</a></li>
+              <li><a href="#!"><i class="material-icons left">border_color</i>Change password</a></li>
+              <li><a href="#!"><i class="material-icons left">vpn_lock</i>Privacy</a></li>
+              <li class="divider"></li>
+              <li><a href="#!"><i class="material-icons left">exit_to_app</i>Sign Out</a></li>
+         </ul>
+          <nav>
+            <div class="nav-wrapper  blue accent-3">
+              <ul class="brand-logo center">
+                  <li><img class="responsive-img" style="margin-top:5px;" width="200px;" src="assets/imgs/logo.png"></img></li>
+                </ul>
+              <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              
+              <ul class="left hide-on-med-and-down">
+                 <li><a href=""><i class="material-icons left">dashboard</i>Dashboard</a></li>
+                <li><a href=""><i class="material-icons left">featured_play_list</i>LinkLists</a></li>
+                <li><a href=""><i class="material-icons left">forum</i>Forums <span class="new badge blue">4</span></a></li>
+              </ul>
+              <ul class="right hide-on-med-and-down"> 
+                <li class="row" style="margin-top:5px;">
+                    <div class="col s1">
+                        <i class="material-icons prefix">search</i>
+                    </div>
+                    <div class="input-field col s11">
+                      <input id="search_Nav" placeholder="Search..." style="width:200px;" type="text" class="validate"></input>
+                    </div>
+                </li>
+                <li>
+                    <a class="dropdown-button" href="" data-activates="account_quick_access">
+                        <div class="row"> 
+                            <div class="col s5 m5 l5">
+                                Username
+                            </div>
+                            <div class="col s6 m6 l6 offset-s1 offset-m1 offset-l1">
+                                <img width="50px" style="margin-top:7px;" src="assets/imgs/myAvatar.png" alt="" class="circle"></img>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li class="row" style="margin-top:5px;">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">search</i>
+                <input id="icon_prefix" placeholder="Search..." type="text" class="validate"></input>
+            </div>
+        </li>
+        
+        <li>
+            <a href="" class="dropdown-button">
+                <div class="row "> 
+                    <div class="col s2 m2 l2">
+                      <img width="40px" style="margin-top:4px;" src="assets/imgs/myAvatar.png" alt="" class="circle"></img>
+                    </div>
+                    <div class="col s9 m9 l9 offset-s1 offset-m1 offset-l1">
+                        Username
+                    </div>
+                </div>
+            </a>
+        </li>   
+         <li>
+             <a href="">
+                 <i class="material-icons left">dashboard</i>Dashboard
+             </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="material-icons left">featured_play_list</i>LinkLists
+            </a>
+        </li>        
+        <li>
+            <a href="">
+                <i class="material-icons left">forum</i>Forums <span class="badge">4</span>
+            </a>
+        </li>
+        <li><a href="#!"><i class="material-icons left">exit_to_app</i>Sign Out</a></li>
+    </ul>  
+    <script>
+            $(document).ready(function(){
+                $(".button-collapse").sideNav();               
+                $(".dropdown-button").dropdown();
+        
+            })
+    </script>
+</div>    

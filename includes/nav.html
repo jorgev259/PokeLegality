@@ -1,0 +1,46 @@
+<div>
+    <div class="navbar-fixed">    
+          <nav>
+            <div class="nav-wrapper  blue accent-3">
+              <ul class="brand-logo center">
+                  <li><img class="responsive-img" style="margin-top:5px;" width="200px;" src="assets/imgs/logo.png"></img></li>
+                </ul>
+              <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              
+              <ul class="left hide-on-med-and-down">
+                 <li><a href="https://doriandres.github.io/LinksCloud/"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="https://doriandres.github.io/LinksCloud/"><i class="material-icons left">info</i>About</a></li>
+                <li><a href="https://doriandres.github.io/LinksCloud/signup"><i class="material-icons left">group_add</i>Join</a></li>
+              </ul>
+              <ul class="right hide-on-med-and-down"> 
+                <li class="row" style="margin-top:5px;">
+                    <div class="col s1">
+                        <i class="material-icons prefix">search</i>
+                    </div>
+                    <div class="input-field col s11">
+                      <input placeholder="Search..." style="width:200px;" type="text" class="validate"></input>
+                    </div>
+                </li>
+                <li><a href="https://doriandres.github.io/LinksCloud/login" class="waves-effect btn indigo">Sign In</a></li>   
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li class="row" style="margin-top:5px;">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">search</i>
+                <input id="icon_prefix" placeholder="Search..." type="text" class="validate"></input>
+            </div>
+        </li>
+        <li><a href="https://doriandres.github.io/LinksCloud/login" class="waves-effect btn indigo">Sign In</a></li>   
+        <li><a href="https://doriandres.github.io/LinksCloud/"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="https://doriandres.github.io/LinksCloud/"><i class="material-icons left">info</i>About</a></li>
+        <li><a href="https://doriandres.github.io/LinksCloud/signup"><i class="material-icons left">group_add</i>Join</a></li>
+    </ul>  
+    <script>
+            $(document).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+    </script>
+</div>    

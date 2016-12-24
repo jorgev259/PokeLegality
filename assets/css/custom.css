@@ -1,0 +1,64 @@
+#email::-webkit-input-placeholder {
+    color: #757575  !important;
+    }
+
+    #email:-moz-placeholder { /* Firefox 18- */
+    color:#757575   !important;  
+    }
+
+    #email::-moz-placeholder {  /* Firefox 19+ */
+    color: #757575  !important;  
+    }
+
+    #email:-ms-input-placeholder {  
+    color: #757575  !important;  
+    }
+      
+    #password::-webkit-input-placeholder {
+    color: #757575  !important;
+    }
+
+    #password:-moz-placeholder { /* Firefox 18- */
+    color: #757575  !important;  
+    }
+
+    #password::-moz-placeholder {  /* Firefox 19+ */
+    color: #757575  !important;  
+    }
+
+    #password:-ms-input-placeholder {  
+    color: #757575  !important;  
+    }  
+      
+    #username::-webkit-input-placeholder {
+    color: #757575  !important;
+    }
+
+    #username:-moz-placeholder { /* Firefox 18- */
+    color: #757575  !important;  
+    }
+
+    #username::-moz-placeholder {  /* Firefox 19+ */
+    color: #757575  !important;  
+    }
+
+    #username:-ms-input-placeholder {  
+    color: #757575  !important;  
+    }  
+
+
+ #search_Nav::-webkit-input-placeholder {
+    color: #ffffff  !important;
+    }
+
+    #search_Nav:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff  !important;  
+    }
+
+    #search_Nav::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff  !important;  
+    }
+
+    #search_Nav:-ms-input-placeholder {  
+    color: #ffffff  !important;  
+    } 
