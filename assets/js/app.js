@@ -8,8 +8,10 @@ $(document).ready(function(){
     
     $('#poke_input').on('input',function() {
         var opt = $('option[value="'+$(this).val()+'"]');
-        debug= opt;
-        console.log(opt[0].dataset.id);
+        if(opt.length != 0){
+            debug= opt;
+            console.log(opt[0].dataset.id);
+        }
     });
 
 });
