@@ -1,34 +1,37 @@
-var pokemon_moves = new Array();
+var pokemon_url = new Array();
 var count = 0;
 
 $(document).ready(function(){
-        pokedata("http://pokeapi.co/api/v2/pokemon");
+        poke_start("http://pokeapi.co/api/v2/pokemon");
 });
 
-function pokedata(url){
+function poke_start(url){    
     $.ajax({
             url:url,
         }).done(function(result){
         if(result.next != null){
-            pokedata(result.next);
-            data_arrangement(result.results)  
+            poke_start(result.next);
+            var results = result.results;
+             results.forEach(function(result){
+                 pokemon_url[count] = result;                 
+                 execute_async("add_to_list",result.name);
+                 
+                 count++;
+             });
+            console.log(pokemon_url);
+        }else{
+            alert("Finished loading pokemon list");
         }
         });
 }
 
-function data_arrangement(results){
-    //console.log(results);
-    results.forEach(function(result){
-        //console.log(result);
-        count++;
-        
-        //Asign name
-        pokemon_moves[count] = [];
-        pokemon_moves[count].name = result.name;
-        
-        //Asign ID
-        var ID = results.
-        
-        console.log(pokemon_moves[count]);
-    })
+function add_to_list(name){
+       $("#pokemon_list").append("<option value='" + name + "'>"); 
 }
+
+function execute_async(func_name,args){
+    setTimeout(function(){
+         window[func_name](args);
+    },0);  
+}
+                
